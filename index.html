@@ -176,18 +176,24 @@
                   class="p-2 text-black rounded"
                   type="text"
                   name=""
-                  id=""
+                  id="playerInput"
                   placeholder="1000"
                 />
 
-                <button class="bg-cyan-500 w-9/12 my-5 p-3 text-2xl rounded">
+                <button
+                  id="playear-expense"
+                  class="bg-cyan-500 w-9/12 my-5 p-3 text-2xl rounded"
+                >
                   Calculate
                 </button>
               </div>
 
               <div class="p-3">
                 <p class="text-2xl p-2 mt-4">
-                  Player Expense <span class="px-3">$5000</span>
+                  Player Expense
+                  <span class="px-3"
+                    >$<span id="total-player-expense"></span
+                  ></span>
                 </p>
 
                 <span class="text-1xl p-2">Manager</span>
@@ -222,6 +228,7 @@
       </section>
     </main>
     <script src="js/app.js"></script>
+    <script src="js/budget.js"></script>
     <!-- bootstrap js -->
   </body>
 </html>
