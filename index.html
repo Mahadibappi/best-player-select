@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- header section -->
-    <header class="p-10">
+    <header class="p-5">
       <div class="bg-black text-white text-center p-10 rounded-lg">
         <h1 class="text-7xl p-6 text-lime-400">Select Your Best Five</h1>
         <p class="text-2xl text-blue-200">
@@ -26,6 +26,7 @@
     <!-- main section -->
     <main>
       <section>
+        <!-- player - 1 -->
         <div class="grid grid-cols-4 gap-5 p-20 bg-black text-white">
           <div
             class="text-center border-2 border-lime-400 rounded-lg shadow shadow-violet-400"
@@ -35,16 +36,18 @@
               src="images/messi.jpg"
               alt=""
             />
-            <h2 class="text-4xl font-bold p-4">Lionel Messi</h2>
+            <h2 id="messi" class="text-4xl font-bold p-4">Lionel Messi</h2>
             <span class="text-1xl p-2">45 Goals</span>
             <span class="text-1xl p-2">120 Assist</span>
             <button
+              id="player-1"
               class="block mx-auto my-7 bg-green-700 text-3xl px-7 w-9/12"
             >
               Select
             </button>
           </div>
 
+          <!-- player -2 -->
           <div
             class="text-center border-2 border-lime-400 rounded-lg shadow shadow-violet-400"
           >
@@ -53,15 +56,18 @@
               src="images/ronaldo.jpg"
               alt=""
             />
-            <h2 class="text-4xl font-bold p-4">Chris Ronaldo</h2>
+            <h2 id="ronaldo" class="text-4xl font-bold p-4">Chris Ronaldo</h2>
             <span class="text-1xl p-2">50 Goals</span>
             <span class="text-1xl p-2">110 Assist</span>
             <button
+              id="player-2"
               class="block mx-auto my-7 bg-green-700 text-3xl px-7 w-9/12"
             >
               Select
             </button>
           </div>
+
+          <!-- player 3 -->
           <div
             class="text-center border-2 border-lime-400 rounded-lg shadow shadow-violet-400"
           >
@@ -70,10 +76,11 @@
               src="images/mane.jpg"
               alt=""
             />
-            <h2 class="text-4xl font-bold p-4">Sadio Mane</h2>
+            <h2 id="mane" class="text-4xl font-bold p-4">Sadio Mane</h2>
             <span class="text-1xl p-2">35 Goals</span>
             <span class="text-1xl p-2">70 Assist</span>
             <button
+              id="player-3"
               class="block mx-auto my-7 bg-green-700 text-3xl px-7 w-9/12"
             >
               Select
@@ -85,11 +92,11 @@
           >
             <h2 class="p-5 text-4xl text-purple-200">Selected-v</h2>
             <ul class="text-2xl tracking-wide">
-              <li class="item1 mb-5">1.Lionel messi</li>
-              <li class="item2 mb-5">2.Chris ronaldo</li>
-              <li class="item3 mb-5">3.sadio Mane</li>
-              <li class="item4 mb-5">4.naymer jr</li>
-              <li class="item5">5.mesut ojil</li>
+              <li class="item mb-5">1. <span id="list-1"></span></li>
+              <li class="item mb-5">2. <span id="list-2"></span></li>
+              <li class="item mb-5">3. <span id="list-3"></span></li>
+              <li class="item mb-5">4. <span id="list-4"></span></li>
+              <li class="item">5. <span id="list-5"></span></li>
             </ul>
           </div>
         </div>
@@ -97,6 +104,8 @@
 
       <section>
         <div class="grid grid-cols-4 gap-5 px-20 bg-black text-white">
+          <!-- player 4 -->
+
           <div
             class="text-center border-2 border-lime-400 rounded-lg shadow shadow-violet-400"
           >
@@ -105,16 +114,18 @@
               src="images/salah.jpg"
               alt=""
             />
-            <h2 class="text-4xl font-bold p-4">Mohammad Salah</h2>
+            <h2 id="salah" class="text-4xl font-bold p-4">Mohammad Salah</h2>
             <span class="text-1xl p-2">55 Goals</span>
             <span class="text-1xl p-2">70 Assist</span>
             <button
+              id="player-4"
               class="block mx-auto my-7 bg-green-700 text-3xl px-7 w-9/12"
             >
               Select
             </button>
           </div>
 
+          <!-- player 5 -->
           <div
             class="text-center border-2 border-lime-400 rounded-lg shadow shadow-violet-400"
           >
@@ -123,11 +134,12 @@
               src="images/neymer.jpg"
               alt=""
             />
-            <h2 class="text-4xl font-bold p-4">Neymet Jr</h2>
+            <h2 id="neymer" class="text-4xl font-bold p-4">Neymet Jr</h2>
             <span class="text-1xl p-2">80 Goals</span>
             <span class="text-1xl p-2">100 Assist</span>
             <button
-              class="block mx-auto my-7 bg-green-700 text-3xl px-7 w-9/12"
+              id="player-5"
+              class="block mx-auto mt-12 bg-green-700 text-3xl px-7 w-9/12"
             >
               Select
             </button>
@@ -144,49 +156,22 @@
             <span class="text-1xl p-2">85 Goals</span>
             <span class="text-1xl p-2">130 Assist</span>
             <button
-              class="block mx-auto my-7 bg-green-700 text-3xl px-7 w-9/12"
+              class="block mx-auto mt-12 bg-green-700 text-3xl px-7 w-9/12"
             >
               Select
             </button>
           </div>
+          <!-- budget section -->
+          <aside>
+            <div
+              class="text-center border-2 border-lime-400 rounded-lg shadow shadow-violet-400 bg-black text-white"
+            >
+              <div class="p-5 text-4xl text-purple-200">
+                <h2>Budget</h2>
+              </div>
+              <div class="input">
+                <label class="text-2xl p-3" for="player">Per Player</label>
 
-          <div
-            class="text-center border-2 border-lime-400 rounded-lg shadow shadow-violet-400 bg-black text-white"
-          >
-            <div class="p-5 text-4xl text-purple-200">
-              <h2>Budget</h2>
-            </div>
-            <div class="input">
-              <label class="text-2xl p-3" for="player">Per Player</label>
-
-              <input
-                class="p-2 text-black rounded"
-                type="text"
-                name=""
-                id=""
-                placeholder="1000"
-              />
-
-              <button class="bg-cyan-500 w-9/12 my-5 p-3 text-2xl rounded">
-                Calculate
-              </button>
-            </div>
-
-            <div class="p-3">
-              <p class="text-2xl p-2 mt-4">
-                Player Expense <span class="px-3">$5000</span>
-              </p>
-
-              <span class="text-1xl p-2">Manager</span>
-              <input
-                class="p-2 my-4 text-black rounded"
-                type="text"
-                name=""
-                id=""
-                placeholder="1000"
-              />
-              <div>
-                <span class="text-1xl p-2">Coach</span>
                 <input
                   class="p-2 text-black rounded"
                   type="text"
@@ -194,16 +179,45 @@
                   id=""
                   placeholder="1000"
                 />
+
+                <button class="bg-cyan-500 w-9/12 my-5 p-3 text-2xl rounded">
+                  Calculate
+                </button>
               </div>
 
-              <button class="bg-cyan-500 w-9/12 my-5 p-3 text-2xl rounded">
-                Calculate Total
-              </button>
-              <div class="text-2xl">
-                Total <span class="text-orange-800 ml-10">$3500</span>
+              <div class="p-3">
+                <p class="text-2xl p-2 mt-4">
+                  Player Expense <span class="px-3">$5000</span>
+                </p>
+
+                <span class="text-1xl p-2">Manager</span>
+                <input
+                  class="p-2 my-4 text-black rounded"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="1000"
+                />
+                <div>
+                  <span class="text-1xl p-2">Coach</span>
+                  <input
+                    class="p-2 ml-4 text-black rounded"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="1000"
+                  />
+                </div>
+
+                <button class="bg-cyan-500 w-9/12 my-5 p-3 text-2xl rounded">
+                  Calculate Total
+                </button>
+                <div class="text-2xl">
+                  Total <span class="text-orange-800 ml-10">$3500</span>
+                </div>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
     </main>
