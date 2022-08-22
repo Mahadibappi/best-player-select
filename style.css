@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@700&family=PT+Sans&family=Poppins:wght@300;500&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@500;700&family=Tiro+Devanagari+Hindi&family=Tiro+Devanagari+Sanskrit&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: grey;
+  font-family: "Roboto", sans-serif;
+}
